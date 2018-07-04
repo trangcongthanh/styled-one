@@ -1,0 +1,32 @@
+{
+  "extends": ["eslint:recommended", "react-app", "prettier"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__PROD__": false,
+    "__COVERAGE__": false
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+    "max-len": ["warn", 120, 2],
+    "no-shadow": ["error", { "builtinGlobals": false, "hoist": "functions", "allow": ["_"] }],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-plusplus": "warn",
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "jsx-a11y/href-no-hash": "off"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "presets": ["latest", "react", "stage-1"],
+  "plugins": ["styled-components"],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  }
+}
