@@ -1,10 +1,9 @@
 {
-  "presets": ["latest", "react", "stage-1"],
-  "plugins": [["styled-components", { "displayName": true }]],
-  "env": {
-    "production": {
-      "presets": ["minify"],
-      "plugins": [["styled-components", { "displayName": false }]]
-    }
-  }
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-1",
+    "react"
+  ]
 }
