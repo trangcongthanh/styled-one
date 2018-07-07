@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import Base, { is, isExist, responsive } from './Base'
 
@@ -44,7 +43,7 @@ const getTemplate = position => props => {
   }
 }
 
-const StyledGrid = styled(Base)`
+const Grid = styled(Base)`
   display: grid;
   ${is('inline')`
     display: inline-grid;
@@ -59,9 +58,5 @@ const StyledGrid = styled(Base)`
   ${responsive(properties)};
 `
 
-const Grid = ({ as, ...restProps }) => {
-  const Component = as && as !== 'div' ? StyledGrid.withComponent(as) : StyledGrid
-  return <Component {...restProps} />
-}
-
+/** @component */
 export default Grid

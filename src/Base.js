@@ -15,6 +15,7 @@ const baseProperties = {
   display: 'display',
   width: 'width',
   height: 'height',
+  filter: 'filter',
 
   /* border */
   border: 'border',
@@ -47,6 +48,28 @@ const baseProperties = {
   backgroundRepeat: 'background-repeat',
   backgroundPosition: 'background-position',
   backgroundAttachment: 'background-attachment',
+
+  boxShadow: 'box-shadow',
+
+  animation: 'animation',
+  animationDelay: 'animation-delay',
+  animationDirection: 'animation-direction',
+  animationDuration: 'animation-duration',
+  animationFillMode: 'animation-fill-mode',
+  animationIterationCount: 'animation-iteration-count',
+  animationName: 'animation-name',
+  animationPlayState: 'animation-play-state',
+  animationTimingFunction: 'animation-timing-function',
+
+  transform: 'transform',
+  transformOrigin: 'transform-origin',
+  transformStyle: 'transform-style',
+
+  transition: 'transition',
+  transitionDelay: 'transition-delay',
+  transitionDuration: 'transition-duration',
+  transitionProperty: 'transition-property',
+  transitionTimingFunction: 'transition-timing-function',
 }
 
 export const is = key => (...args) => props => props[key] && css(...args)
@@ -105,6 +128,8 @@ const Base = styled.div`
   padding: ${padding()};
   ${isExist(baseProperties)};
   ${responsive(baseProperties)};
+  ${props => props.hover && css`:hover { ${props.hover}}`};
 `
 
+/** @component */
 export default Base

@@ -1,5 +1,14 @@
 module.exports = {
-  components: 'src/[A-Z]*.js',
+  sections: [
+    {
+      name: 'Welcome',
+      content: 'docs/welcome.md',
+    },
+    {
+      name: 'Components',
+      components: 'src/[A-Z]*.js',
+    },
+  ],
   webpackConfig: {
     module: {
       rules: [
