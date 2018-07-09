@@ -10,7 +10,7 @@ Flex example:
     justifyContent="center"
     border="1px solid red"
     borderTop="1px solid blue"
-    borderTopWidth="5px"
+    borderTopWidth={5}
     flex="1"
     boxShadow="5px 5px blue, 10px 10px red, 15px 15px green"
     responsive={{

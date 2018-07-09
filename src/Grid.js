@@ -1,30 +1,5 @@
 import styled from 'styled-components'
-import Base, { is, isExist, responsive } from './Base'
-
-const properties = {
-  gridTemplateRows: 'grid-template-rows',
-  gridTemplateColumns: 'grid-template-columns',
-  gridTemplate: 'grid-template',
-  gridRowGap: 'grid-row-gap',
-  gridColumnGap: 'grid-column-gap',
-  gridGap: 'grid-gap',
-  gridAreas: 'grid-template-areas',
-  gridTemplateAreas: 'grid-template-areas',
-
-  justifyItems: 'justify-items',
-  alignItems: 'align-items',
-  placeItems: 'place-items',
-
-  justifyContent: 'justify-content',
-  alignContent: 'align-content',
-  placeContent: 'place-content',
-
-  gridAutoRows: 'grid-auto-rows',
-  gridAutoColumns: 'grid-auto-columns',
-  gridAutoFlow: 'grid-auto-flow',
-  gridFlow: 'grid-auto-flow',
-  grid: 'grid',
-}
+import One, { is } from './One'
 
 const getTemplate = position => props => {
   switch (position) {
@@ -43,7 +18,7 @@ const getTemplate = position => props => {
   }
 }
 
-const Grid = styled(Base)`
+const Grid = styled(One)`
   display: grid;
   ${is('inline')`
     display: inline-grid;
@@ -54,8 +29,6 @@ const Grid = styled(Base)`
   ${is('column')`
     grid-template-columns: ${getTemplate('column')};
   `};
-  ${isExist(properties)};
-  ${responsive(properties)};
 `
 
 /** @component */

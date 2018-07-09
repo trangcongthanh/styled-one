@@ -1,5 +1,7 @@
 import Flex from './Flex'
 import Grid from './Grid'
-import Base from './Base'
+import One from './One'
 
-export { Flex, Grid, Base }
+export default One
+
+export { Flex, Grid }

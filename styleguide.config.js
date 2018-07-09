@@ -1,7 +1,7 @@
 module.exports = {
   sections: [
     {
-      name: 'Welcome',
+      name: '<One />',
       content: 'docs/welcome.md',
     },
     {
