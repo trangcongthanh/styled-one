@@ -1,13 +1,13 @@
 {
   "name": "styled-one",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "repository": "trangcongthanh/styled-one",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "yarn clean && rollup -c",
     "start": "rollup -c -w",
     "clean": "rimraf dist/**",
     "guide": "yarn styleguidist server",

@@ -168,6 +168,18 @@ export const CSS_PROPERTIES = {
   gridRow: 'grid-row',
   gridArea: 'grid-area',
   placeSelf: 'place-self',
+
+  margin: 'margin',
+  marginBottom: 'margin-bottom',
+  marginTop: 'margin-top',
+  marginLeft: 'margin-left',
+  marginRight: 'margin-right',
+
+  padding: 'padding',
+  paddingBottom: 'padding-bottom',
+  paddingTop: 'padding-top',
+  paddingLeft: 'padding-left',
+  paddingRight: 'padding-right',
 }
 
 export const BREAKPOINTS = {

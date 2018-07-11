@@ -37,3 +37,10 @@ Flex example:
   <Flex>Item 3</Flex>
 </Flex>
 ```
+
+```js
+<Flex>
+  <Flex>Item 1</Flex>
+  <Flex order={-1}>Item 2</Flex>
+</Flex>
+```
