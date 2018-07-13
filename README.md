@@ -10,9 +10,9 @@ Bacause, you want to change style via props but too lazy to handle each CSS Prop
 
 ## Installation
 
-`yarn add styled-one`
+`yarn add styled-one styled-components`
 or
-`npm i -S styled-one`
+`npm i -S styled-one styled-components`
 
 And then import it
 
